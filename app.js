@@ -7,7 +7,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var response = {};
 
-    var ipaddress = req.headers['host'];
+    console.log(req.connection)
+
+    var ipaddress = req.connection.remoteAddress;
     response["ipaddress"] = ipaddress;
 
     var os = req.headers['user-agent'];
