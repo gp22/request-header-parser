@@ -7,10 +7,8 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
     var response = {};
 
-    console.log(req.connection)
-
-    var ipaddress = req.connection.remoteAddress;
-    response["ipaddress"] = ipaddress;
+    var ip = req.ip;
+    response["ipaddress"] = ip.slice(ip.lastIndexOf(':')+1);
 
     var os = req.headers['user-agent'];
     response["software"] = os.substring(os.indexOf('(')+1, os.indexOf(')'));
