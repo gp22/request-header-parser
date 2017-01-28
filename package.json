@@ -1,0 +1,22 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "When you visit the URL, it will return the IP address, language and operating system of your browser in JSON format.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gp22/request-header-parser.git"
+  },
+  "author": "gp22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gp22/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/gp22/request-header-parser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
